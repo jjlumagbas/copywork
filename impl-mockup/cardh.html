@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <title>Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <style>
+
+      h1, h2, p {
+        margin: 0px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 12px;
+      }  
+
+
+      .card {
+        background-color: #BCE0FD;
+
+        font-family: Helvetica, Arial, sans-serif;
+        color: #2699FB;
+        line-height: 1.5;
+
+        margin-bottom: 10px;
+      }
+
+      .card header, footer  {
+        padding: 30px;
+      }
+
+      .card section {
+        padding: 0px 30px 30px;
+      }
+
+      .card header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .avatar {
+        margin-right: 5px;
+        width: 32px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .card footer {
+        padding-bottom: 30px;
+        background-color: #F1F9FF;
+      }
+
+      .author {
+        font-weight: bold;
+      }
+
+      main {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        -webkit-overflow-scrolling: touch;
+      }   
+
+      .card {
+        flex: 0 0 340px;
+        margin-right: 10px;
+      }
+
+
+      @media screen and (max-width: 340px) {
+        .card {
+          flex: 0 0 90vw;
+        }
+      }
+        
+    </style>
+  </head>
+  <body>
+
+    <main>
+      <article class="card">
+
+        <header>
+          <h2>Lorem Ipsum</h2>
+          <span>
+            <i 
+              class="fas fa-clock"
+              aria-hidden="true">
+            </i> 
+            1h ago
+          </span>
+        </header>
+  
+        <section class="content">
+          <h1>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</h1>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+        </section>
+  
+        <footer>
+          <img
+            class="avatar"
+            src="http://www.gravatar.com/avatar"
+            alt="Name"
+          />
+          <span class="author">by Name Surname</span>
+        </footer>
+  
+      </article>
+  
+      <article class="card">
+  
+        <header>
+          <h2>Lorem Ipsum</h2>
+          <span>
+            <i 
+              class="fas fa-clock"
+              aria-hidden="true">
+            </i> 
+            1h ago
+          </span>
+        </header>
+  
+        <section class="content">
+          <h1>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</h1>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+        </section>
+  
+        <footer>
+          <img
+            class="avatar"
+            src="http://www.gravatar.com/avatar"
+            alt="Name"
+          />
+          <span class="author">by Name Surname</span>
+        </footer>
+  
+      </article>
+  
+      <article class="card">
+
+        <header>
+          <h2>Lorem Ipsum</h2>
+          <span>
+            <i 
+              class="fas fa-clock"
+              aria-hidden="true">
+            </i> 
+            1h ago
+          </span>
+        </header>
+  
+        <section class="content">
+          <h1>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</h1>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+        </section>
+  
+        <footer>
+          <img
+            class="avatar"
+            src="http://www.gravatar.com/avatar"
+            alt="Name"
+          />
+          <span class="author">by Name Surname</span>
+        </footer>
+  
+      </article>
+    </main>
+    
+  </body>
+</html>

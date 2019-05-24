@@ -7,7 +7,7 @@
   <style>
     html {
       box-sizing: border-box;
-      font-family: Helvetica, Verdana, sans-serif;
+      font-family: Verdana, sans-serif;
     }
 
     *, *:before, *:after {
@@ -38,8 +38,7 @@
     }
 
     h1, h2 {
-      margin-top: .5em;
-      margin-bottom: .5em;
+      margin: .5em 0;
     }
 
     h1 {
@@ -53,6 +52,14 @@
 
     p {
       line-height: 1.4em;
+    }
+
+    blockquote {
+      margin: .5em;
+      font-size: 1.5em;
+      line-height: 1.4em;
+
+      font-weight: bold;
     }
 
     img {
@@ -94,6 +101,10 @@
       font-size: .6em;
       white-space: nowrap;
     }
+
+    .quote {
+      text-align: center;
+    }
     
 
     @media screen and (min-width: 520px) {
@@ -101,7 +112,7 @@
         font-size: 20px;
       }
 
-      .full-width {
+     .full-width {
         grid-column-start: span 2;
       }
 
@@ -163,7 +174,7 @@
       </figcaption>
     </figure>
 
-    <figure class="full-width">
+    <figure class="full-width quote">
       <blockquote>“My daughters love coming into my studio to watch me work and borrow things. My eldest is always dreaming and drawing, imagining little scenes that she photographs, just like I do.”</blockquote>
       <figcaption>Chloé</figcaption>
     </figure>
@@ -186,7 +197,7 @@
       </figcaption>
     </figure>
 
-    <figure class="full-width">
+    <figure class="full-width quote">
       <blockquote>“Having furniture on wheels means it’s easy to move around if I’m working on a bigger project. The break-out space is where I lay out works in progress, and the kids use it to do their crafts.”</blockquote>
       <figcaption>Chloé</figcaption>
     </figure>

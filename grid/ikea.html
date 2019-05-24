@@ -7,11 +7,52 @@
   <style>
     html {
       box-sizing: border-box;
-      font-size: 16px;
+      font-family: Helvetica, Verdana, sans-serif;
     }
 
     *, *:before, *:after {
       box-sizing: inherit;
+    }
+    
+    body {
+      margin: 0;
+    }
+
+    article {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: .5rem;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(auto, 520px));
+      grid-gap: .75rem;
+    }
+
+    article > header, footer {
+      text-align: center;
+    }
+
+    article > header, footer > p {
+      max-width: 46em;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      margin-top: .5em;
+      margin-bottom: .5em;
+    }
+
+    h1 {
+      font-size: 2.25em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }   
+
+
+    p {
+      line-height: 1.4em;
     }
 
     img {
@@ -24,6 +65,50 @@
       padding: 0;
     }
 
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    #tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #tags li {
+      list-style: none;
+      margin-right: .25rem;
+      margin-bottom: .5rem;
+    }
+
+    #tags a {
+      background-color:lightgray;
+      border-radius: 5px;
+      color: black;
+      padding: .5em 1em;
+
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: .6em;
+      white-space: nowrap;
+    }
+    
+
+    @media screen and (min-width: 520px) {
+      html {
+        font-size: 20px;
+      }
+
+      .full-width {
+        grid-column-start: span 2;
+      }
+
+      .right-col {
+        grid-column-start: 2;
+      }
+    }
 
     
   </style>
@@ -32,25 +117,19 @@
 <body>
 
   <article>
-    <header>
+    <header class="full-width">
       <h1>Home visit: a garage turned creative workspace</h1>
       <time datetime="2019-03-25">25-Mar-2019</time>
       <p>Create an inspiring home office using whatever space you have. This garage was transformed into a colorful and creative workspace that’s a joy to spend time in. Here’s how…</p>
-      <section>
-        <h2>Tags:</h2>
-        <ul>
-          <li>Back To School</li>
-          <li>Home Office</li>
-          <li>Working</li>
+        <ul id="tags">
+          <li><a href="#">Back to School</a></li>
+          <li><a href="#">Home Office</a></li>
+          <li><a href="#">Working</a></li>
         </ul>
-      </section>
     </header>
 
-    <img src="img/garage.jpg" alt="A colorful workspace with desk, trolley, chairs and wall displays, in a garage with the roller door open.">
-    <section>
-        <h2>Bright ideas</h2>
-        <p>A windowless garage might not seem like the best spot for creativity but some simple additions make it work. Prop stylist and illustrator Chloé positions her desk by the door for natural light and has a desk lamp for detailed work. White walls brighten up the whole space and create a blank canvas for Chloé’s artwork, which she displays on picture ledges so it’s easy to switch around.</p>
-     </section>
+    <img class="full-width" src="img/garage.jpg" alt="A colorful workspace with desk, trolley, chairs and wall displays, in a garage with the roller door open.">
+    
 
     <figure>
       <img src="img/desk.jpg" alt="Pen pots on a desk with a white desk lamp, pink chair, and artwork on picture ledges on the wall behind.">
@@ -60,6 +139,12 @@
         <span>$219.00</span>
       </figcaption>
     </figure>
+
+    <section class="right-col">
+      <h2>Bright ideas</h2>
+      <p>A windowless garage might not seem like the best spot for creativity but some simple additions make it work. Prop stylist and illustrator Chloé positions her desk by the door for natural light and has a desk lamp for detailed work. White walls brighten up the whole space and create a blank canvas for Chloé’s artwork, which she displays on picture ledges so it’s easy to switch around.</p>
+    </section>
+
     <figure>
       <img src="img/shelf.jpg" alt="Colorful paper shapes displayed on a white picture ledge on a white wall.">
       <figcaption>
@@ -78,7 +163,7 @@
       </figcaption>
     </figure>
 
-    <figure>
+    <figure class="full-width">
       <blockquote>“My daughters love coming into my studio to watch me work and borrow things. My eldest is always dreaming and drawing, imagining little scenes that she photographs, just like I do.”</blockquote>
       <figcaption>Chloé</figcaption>
     </figure>
@@ -101,20 +186,20 @@
       </figcaption>
     </figure>
 
-    <figure>
+    <figure class="full-width">
       <blockquote>“Having furniture on wheels means it’s easy to move around if I’m working on a bigger project. The break-out space is where I lay out works in progress, and the kids use it to do their crafts.”</blockquote>
       <figcaption>Chloé</figcaption>
     </figure>
 
     <img src="img/outside.jpg" alt="Looking into a colorful home office in a garage from the concrete driveway.">
-    <section>
+    <section class="right-col">
       <h2>Make space for creativity</h2>
       <p>“I was drawn to this house because of the garage,” says Chloé. “When you work from home, it’s nice to go to a different space to work, and then leave it at the end of the day.”</p>
     </section>
 
-    <img src="img/chloe.jpg" alt="A portrait of Chloé sitting at her desk.">
+    <img class="full-width" src="img/chloe.jpg" alt="A portrait of Chloé sitting at her desk.">
 
-    <footer>
+    <footer class="full-width">
       <p>We love to see our customers get creative with our products. Go for it! But please note that altering or modifying IKEA products so they can no longer be re-sold or used for their original purpose, means the IKEA limited warranties and your right to return the products will be lost.</p>
       <section>
         <h2>Made by</h2>

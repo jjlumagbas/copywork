@@ -1,70 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    html {
+      box-sizing: border-box;
+      font-size: 18px;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    img.logo {
+      width: 140px;
+    }
+
+    button {
+      border-radius: 20px;
+      padding: .5em 2em;
+
+      box-shadow: -1px 3px 6px 0px #cccccc69;
+
+      font-weight: bold;
+    }
+
+    button.primary {
+      padding: 1em 2em;
+      border: solid thin hsl(322, 100%, 66%);
+      background-color: hsl(322, 100%, 66%);
+      color: white;
+    }
+
+    button.secondary {
+      border: solid thin white;
+      background-color: white;
+    }
+
+
+    .hero {
+      background-image: url("images/bg-hero-mobile.svg");
+      background-color: hsl(193, 100%, 96%);
+      padding: 1.5em 1em;
+    }
+
+    .hero header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 5em;
+    }
+
+    .hero .main {
+      padding: 0 1.5em;
+      text-align: center;
+    }
+
+    .spacer {
+      height: 3em;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  Try It Free
+  <section class="hero">
+    <header>
+      <img class="logo" src="images/logo.svg" alt="Huddle logo" />
+      <button class="secondary">Try It Free</button>
+    </header>
 
-  Build The Community Your Fans Will Love
+    <div class="main">
+      <h1>Build The Community Your Fans Will Love</h1>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+      <p>
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.
+      </p>
 
-  Get Started For Free
+      <button class="primary">Get Started For Free</button>
 
-  Grow Together
+      <div class="spacer"></div>
 
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
+      <img src="images/illustration-mockups.svg" alt="Mockups of the application for desktop and mobile" />
+    </div>
+  </section>
 
-  Flowing Conversations
+  <h2>Grow Together</h2>
 
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
+  <p>
+    Generate meaningful discussions with your audience and build a strong, loyal community.
+    Think of the insightful conversations you miss out on with a feedback form.
+  </p>
 
-  Your Users
+  <h2>Flowing Conversations</h2>
 
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
+  <p>
+    You wouldn't paginate a conversation in real life, so why do it online? Our threads
+    have just-in-time loading for a more natural flow.
+  </p>
 
-  Ready To Build Your Community?
+  <h2>Your Users</h2>
 
-  Get Started For Free
+  <p>
+    It takes no time at all to integrate Huddle with your app's authentication solution.
+    This means, once signed in to your app, your users can start chatting immediately.
+  </p>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
+  <h2>Ready To Build Your Community?</h2>
 
-  +1-543-123-4567
-  example@huddle.com
+  <button>Get Started For Free</button>
 
-  About Us
-  What We Do
-  FAQ
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua
+  </p>
+  <p>+1-543-123-4567</p>
+  <p>example@huddle.com</p>
 
-  Career
-  Blog
-  Contact Us
+  <ul>
+    <li>About Us</li>
+    <li>What We Do</li>
+    <li>FAQ</li>
+    <li>Career</li>
+    <li>Blog</li>
+    <li>Contact Us</li>
+  </ul>
 
-  &copy; Copyright 2018 Huddle. All rights reserved.
+  <small>&copy; Copyright 2018 Huddle. All rights reserved.</small>
+
 
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">JJ Lumagbas</a>.
     </p>
   </footer>
 </body>
+
 </html>

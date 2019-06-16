@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600|Open+Sans:400,700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
   <style>
@@ -25,6 +25,19 @@
     body {
       margin: 0;
       padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    h1,
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 2em;
     }
 
     img {
@@ -36,25 +49,38 @@
       width: 140px;
     }
 
-    button {
-      border-radius: 20px;
-      padding: .5em 2em;
+    a.button {
+      border-radius: 30px;
+      padding: 1em 3em;
 
-      box-shadow: -1px 3px 6px 0px #cccccc69;
+      box-shadow: -1px 3px 6px 0px #cccccc9a;
 
-      font-weight: bold;
+      font-size: .8em;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+
+      text-decoration: none;
     }
 
-    button.primary {
-      padding: 1em 2em;
+
+    a.primary {
       border: solid thin hsl(322, 100%, 66%);
       background-color: hsl(322, 100%, 66%);
       color: white;
     }
 
-    button.secondary {
+    a.primary:visited {
+      color: white;
+    }
+
+    a.secondary {
+      padding: .5em 2em;
       border: solid thin white;
       background-color: white;
+    }
+
+    a.secondary:visited {
+      color: black;
     }
 
 
@@ -62,6 +88,7 @@
       background-image: url("images/bg-hero-mobile.svg");
       background-color: hsl(193, 100%, 96%);
       padding: 1.5em 1em;
+      margin-bottom: 2em;
     }
 
     .hero header {
@@ -74,11 +101,39 @@
 
     .hero .main {
       padding: 0 1.5em;
-      text-align: center;
     }
 
     .spacer {
       height: 3em;
+    }
+
+    .spacer-big {
+      height: 6em;
+    }
+
+    .card {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 2em;
+      padding: 2em;
+
+      border-radius: 20px;
+      box-shadow: -1px 3px 6px 0px #cccccc9a;
+    }
+
+    footer {
+      color: white;
+      background-color: #00262F;
+    }
+
+    footer .card {
+      position: relative;
+      top: -4em;
+      box-shadow: 0px -1px 6px 0px #cccccc9a;
+
+      background-color: white;
+      color: black;
+
     }
 
     .attribution {
@@ -97,7 +152,7 @@
   <section class="hero">
     <header>
       <img class="logo" src="images/logo.svg" alt="Huddle logo" />
-      <button class="secondary">Try It Free</button>
+      <a class="button secondary" href="/">Try It Free</a>
     </header>
 
     <div class="main">
@@ -108,7 +163,7 @@
         Create connections with your users as you engage in genuine discussion.
       </p>
 
-      <button class="primary">Get Started For Free</button>
+      <a class="button primary" href="/">Get Started For Free</a>
 
       <div class="spacer"></div>
 
@@ -116,51 +171,66 @@
     </div>
   </section>
 
-  <h2>Grow Together</h2>
+  <section class="card">
+    <img src="images/illustration-grow-together.svg"
+      alt="Illustration of a man and woman with UI interfaces in between" />
+    <h2>Grow Together</h2>
 
-  <p>
-    Generate meaningful discussions with your audience and build a strong, loyal community.
-    Think of the insightful conversations you miss out on with a feedback form.
-  </p>
+    <p>
+      Generate meaningful discussions with your audience and build a strong, loyal community.
+      Think of the insightful conversations you miss out on with a feedback form.
+    </p>
+  </section>
 
-  <h2>Flowing Conversations</h2>
+  <section class="card">
+    <img src="images/illustration-flowing-conversation.svg"
+      alt="Illustration of a group of people gathered around a table" />
+    <h2>Flowing Conversations</h2>
 
-  <p>
-    You wouldn't paginate a conversation in real life, so why do it online? Our threads
-    have just-in-time loading for a more natural flow.
-  </p>
+    <p>
+      You wouldn't paginate a conversation in real life, so why do it online? Our threads
+      have just-in-time loading for a more natural flow.
+    </p>
+  </section>
 
-  <h2>Your Users</h2>
+  <section class="card">
+    <img src="images/illustration-your-users.svg" alt="Illustration of people interacting with text bubbles" />
+    <h2>Your Users</h2>
 
-  <p>
-    It takes no time at all to integrate Huddle with your app's authentication solution.
-    This means, once signed in to your app, your users can start chatting immediately.
-  </p>
+    <p>
+      It takes no time at all to integrate Huddle with your app's authentication solution.
+      This means, once signed in to your app, your users can start chatting immediately.
+    </p>
+  </section>
 
-  <h2>Ready To Build Your Community?</h2>
-
-  <button>Get Started For Free</button>
-
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua
-  </p>
-  <p>+1-543-123-4567</p>
-  <p>example@huddle.com</p>
-
-  <ul>
-    <li>About Us</li>
-    <li>What We Do</li>
-    <li>FAQ</li>
-    <li>Career</li>
-    <li>Blog</li>
-    <li>Contact Us</li>
-  </ul>
-
-  <small>&copy; Copyright 2018 Huddle. All rights reserved.</small>
-
+  <div class="spacer-big"></div>
 
   <footer>
+    <section class="card">
+      <h2>Ready To Build Your Community?</h2>
+
+      <a class="button primary" href="/">Get Started For Free</a>
+    </section>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua
+    </p>
+    <p>+1-543-123-4567</p>
+    <p>example@huddle.com</p>
+
+    <ul>
+      <li>About Us</li>
+      <li>What We Do</li>
+      <li>FAQ</li>
+      <li>Career</li>
+      <li>Blog</li>
+      <li>Contact Us</li>
+    </ul>
+
+    <small>&copy; Copyright 2018 Huddle. All rights reserved.</small>
+
+
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">JJ Lumagbas</a>.

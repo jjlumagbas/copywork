@@ -2,6 +2,10 @@
 
 CSS layout practice
 
+## Frontend Mentor
+
+- [Huddle landing page](https://jjlumagbas.github.io/copywork/frontendmentor/huddle-landing-page/)
+
 
 ## Flexbox
 
